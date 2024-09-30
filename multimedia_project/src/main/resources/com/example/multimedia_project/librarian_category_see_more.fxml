@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="415.0" prefWidth="400.0" style="-fx-background-color: #ADD8E6;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="titleLabel" layoutX="160.0" layoutY="34.0" text="Category">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="176.0" layoutY="96.0" text="Books">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ListView fx:id="bookList" layoutX="100.0" layoutY="133.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="backButton" layoutX="32.0" layoutY="22.0" mnemonicParsing="false" onAction="#goBackToLibrarianInterface" text="Back" />
+      <Button fx:id="editButton" layoutX="69.0" layoutY="360.0" mnemonicParsing="false" onAction="#editCategory" prefHeight="26.0" prefWidth="106.0" text="Edit Category" />
+      <Button fx:id="deleteButton" layoutX="224.0" layoutY="360.0" mnemonicParsing="false" onAction="#deleteCategory" prefHeight="26.0" prefWidth="105.0" text="Delete Category" />
+   </children>
+</AnchorPane>

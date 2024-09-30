@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="startPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="485.0" prefWidth="462.0" style="-fx-background-color: #ADD8E6;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.multimedia_project.HelloController">
+    <children>
+        <Button fx:id="userLoginButton" layoutX="230.0" layoutY="43.0" mnemonicParsing="false" onAction="#handleUserLogin" style="-fx-background-color: #FFF0F5; -fx-border-color: black; -fx-font-family: Arial;" text="Log in as User" />
+        <Button fx:id="userSignupButton" layoutX="334.0" layoutY="43.0" mnemonicParsing="false" onAction="#handleUserSignup" style="-fx-background-color: #FFF0F5; -fx-border-color: black; -fx-font-family: Arial;" text="Sign up as User" />
+        <Button fx:id="librarianLoginButton" layoutX="25.0" layoutY="43.0" mnemonicParsing="false" onAction="#handleLibrarianLogin" style="-fx-background-color: #FFF0F5; -fx-border-color: black; -fx-font-family: Arial;" text="Log in as Librarian" />
+        <ListView fx:id="topFiveBooksList" layoutX="106.0" layoutY="112.0" prefHeight="345.0" prefWidth="260.0" style="-fx-background-color: #FFFFFF; -fx-font-family: Arial; -fx-font-size: 14;" />
+    </children>
+</AnchorPane>

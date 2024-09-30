@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="270.0" prefWidth="299.0" style="-fx-background-color: #ADD8E6;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="87.0" layoutY="32.0" text="New Category">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="132.0" layoutY="87.0" text="Title">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="titleText" layoutX="76.0" layoutY="122.0" />
+      <Button fx:id="doneButton" layoutX="181.0" layoutY="185.0" mnemonicParsing="false" onAction="#addCategory" text="Done" />
+      <Button fx:id="backButton" layoutX="76.0" layoutY="185.0" mnemonicParsing="false" onAction="#goBackToLibrarianInterface" text="Back" />
+      <Label fx:id="alertLabel" layoutX="56.0" layoutY="234.0" text="Category added successfully" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

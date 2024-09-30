@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="485.0" prefWidth="302.0" style="-fx-background-color: #ADD8E6;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="148.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="166.0" minWidth="10.0" prefWidth="146.39999999999998" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="46.39999999999998" minHeight="10.0" prefHeight="34.39999999999998" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="76.80000000000001" minHeight="10.0" prefHeight="76.80000000000001" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Label text="Title" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="titleText" maxWidth="-Infinity" prefWidth="130.0" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+        <TextField fx:id="authorText" maxWidth="-Infinity" prefWidth="130.0" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+        <Label text="Author" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="publisherText" maxWidth="-Infinity" prefWidth="130.0" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+        <Label text="Publisher" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="ISBNText" maxWidth="-Infinity" prefWidth="130.0" GridPane.columnIndex="1" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" />
+        <TextField fx:id="publicationYearText" maxWidth="-Infinity" prefWidth="130.0" GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.valignment="BOTTOM" />
+        <Label text="ISBN" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="BOTTOM">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label text="Publication Year" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="BOTTOM">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="categoryText" maxWidth="-Infinity" prefWidth="130.0" GridPane.columnIndex="1" GridPane.rowIndex="6" GridPane.valignment="BOTTOM" />
+        <TextField fx:id="copiesText" maxWidth="-Infinity" prefWidth="130.0" GridPane.columnIndex="1" GridPane.rowIndex="7" GridPane.valignment="BOTTOM" />
+        <Label text="Category" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="BOTTOM">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label text="Number of copies" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="BOTTOM">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Button fx:id="addBookButton" mnemonicParsing="false" onAction="#addNewBook" text="Add Book" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="8" />
+        <Label fx:id="errorLabel" textFill="#ef0b0b" visible="false" GridPane.halignment="CENTER" GridPane.rowIndex="8">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Button fx:id="backButton" mnemonicParsing="false" onAction="#goBackToLibrarianInterface" text="Back" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+    </children>
+</GridPane>

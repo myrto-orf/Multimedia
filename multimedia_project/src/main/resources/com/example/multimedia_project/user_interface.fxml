@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #ADD8E6;">
+         <children>
+            <GridPane layoutX="-2.0" layoutY="4.0" prefHeight="251.0" prefWidth="175.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="55.39999618530273" minHeight="10.0" prefHeight="55.39999618530273" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="26.200000000000003" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="51.2" minHeight="10.0" prefHeight="32.8" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="31.60000000000001" minHeight="10.0" prefHeight="23.999999999999986" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="46.400000000000006" minHeight="10.0" prefHeight="32.400000000000006" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="31.19999999999999" minHeight="10.0" prefHeight="26.19999999999999" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="35.400000000000006" minHeight="8.400000000000006" prefHeight="31.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="52.400000000000006" minHeight="10.0" prefHeight="43.00000000000003" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Search Book" GridPane.halignment="CENTER">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label text="Title" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="bookTitleText" maxWidth="-Infinity" prefWidth="130.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+                  <Label layoutX="83.0" layoutY="105.0" text="Author" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="bookAuthorText" layoutX="32.0" layoutY="144.0" maxWidth="-Infinity" prefWidth="130.0" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="TOP" />
+                  <TextField fx:id="bookPublicationYearText" layoutX="32.0" layoutY="260.0" maxWidth="-Infinity" prefWidth="130.0" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="TOP" />
+                  <Label layoutX="74.0" layoutY="222.0" text="Publication Year" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="BOTTOM">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="searchBookButton" mnemonicParsing="false" onAction="#searchBook" text="Search" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+               </children>
+            </GridPane>
+            <FlowPane fx:id="searchedBooksFlowPane" layoutY="261.0" prefHeight="132.0" prefWidth="175.0" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: lavenderblush;">
+         <children>
+            <Label layoutX="151.0" layoutY="55.0" text="Issued Books">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <FlowPane fx:id="issuedBooksFlowPane" layoutX="88.0" layoutY="111.0" prefHeight="258.0" prefWidth="241.0" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>
